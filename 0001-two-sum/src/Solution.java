@@ -37,11 +37,14 @@ public class Solution {
 
 
     public static void main(String[] args) {
+        long startTime=System.nanoTime();   //获取开始时间
         int[] ints = twoSum02(new int[]{1, 4, 5, 2, 7}, 12);
         if (ints.length > 0) {
             for (int i = 0; i < ints.length; i++) {
                 System.out.println(ints[i]);
             }
         }
+        long endTime=System.nanoTime(); //获取结束时间
+        System.out.println("程序运行时间： "+(endTime-startTime)+"ns");
     }
 }
